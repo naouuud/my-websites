@@ -1,0 +1,20 @@
+.header, 
+.footer,
+.hero {
+    background-color: #1F2937;
+}
+
+.quote {
+    background-color: #E5E7EB;
+}
+
+.header-logo {
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+.hero-left h2 {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: 800;
+}
