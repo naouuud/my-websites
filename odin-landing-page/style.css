@@ -4,11 +4,10 @@
     font-size: 18px;
     font-family: roboto, sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 16px;
-    padding: 16px 0;
+    padding: 18px 0;
 }
 
 .header-left,
@@ -35,7 +34,6 @@
 
 .hero {
     background-color: #1a2246;
-    padding: 120px 0;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
@@ -45,14 +43,12 @@
 }
 
 .hero-image {
-    width: 400px;
-    height: 300px;
-    flex-shrink: 0;
+    height: 500px;
 }
 
 .hero-image img {  
-    width: 400px;
-    height: 300px;
+    width: auto;
+    height: 100%;
     font-family: roboto, sans-serif;
     font-size: 12px;
     font-weight: normal;
@@ -63,6 +59,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 32px;
     width: 400px;
     flex-shrink: 0;
 }
@@ -71,6 +68,7 @@
     color: #F9FAF8;
     font-size: 72px;
     font-weight: 800;
+    text-align: right;
     margin: 0;
     font-family: roboto, sans-serif;
 }
@@ -79,16 +77,23 @@
     color: #E5E7EB;
     font-size: 18px;
     font-family: roboto, sans-serif;
+    text-align: right;
 }
 
 .hero-text a {
     background-color: #E5E7EB;
     color: #1a2246;
-    padding: 4px 0;
+    padding: 4px 10px;
     font-family: roboto, sans-serif;
     box-sizing: border-box;
     text-align: center; 
     text-decoration: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
 }
 
 .body {
@@ -96,52 +101,77 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 100px 0 100px 0;
+    padding: 80px 0;
     box-sizing: border-box;
-}
-
-.body div {
     color: #1f2937;
     font-family: roboto, sans-serif;
     font-size: 48px;
     font-weight: 800;
-    margin-bottom: 16px;
+    gap: 32px;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 32px;
     max-width: 800px;
 }
 
-.container img {
+.element {
     width: 160px;
     height: 160px;
-    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.element img {
+    width: 100%;
+    height: auto;
     font-family: roboto, sans-serif;
     font-size: 12px;
     font-weight: normal;
 }
 
-.quote {
-    background-color: #E5E7EB;
-    padding: 100px 400px;
+.element p {
+    width: 100%;
+    font-size: 16px;
+    font-weight: normal;
     font-family: roboto, sans-serif;
-    color: #1F2937;
-    font-size: 32px;
+    text-align: center;
+    padding: 0;
 }
 
-.quote h3 {
+.quote {
+    background-color: #E5E7EB;
+    font-family: roboto, sans-serif;
+    color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 0;
+}
+
+.quote div {
+    max-width: 800px;
+    padding: 0 32px;
+    font-size: 32px;
     font-style: italic;
-    font-weight: normal;
-    margin: 0;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .quote p {
-    text-align: right;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
+    font-style: normal;
+    text-align: right;
+    padding: 0;
 }
 
 .action-section {
@@ -188,8 +218,4 @@ p.action-title {
     color: #F9FAF8;
     font-size: 24px;
     font-family: roboto, sans-serif;
-}
-
-* {
-border: 1px solid red;
 }
