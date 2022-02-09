@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .header {
     background-color: #E5E7EB;
     color: #1a2246;
@@ -101,7 +105,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 80px 0;
+    padding: 130px 0;
     box-sizing: border-box;
     color: #1f2937;
     font-family: roboto, sans-serif;
@@ -124,7 +128,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 8px;
+    gap: 12px;
     margin-bottom: 16px;
 }
 
@@ -134,15 +138,16 @@
     font-family: roboto, sans-serif;
     font-size: 12px;
     font-weight: normal;
+    border-radius: 10px;
 }
 
 .element p {
-    width: 100%;
+    display: block;
     font-size: 16px;
     font-weight: normal;
     font-family: roboto, sans-serif;
     text-align: center;
-    padding: 0;
+    margin: 0;
 }
 
 .quote {
@@ -152,7 +157,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 140px 0;
+    padding: 150px 0;
 }
 
 .quote div {
@@ -174,48 +179,64 @@
     padding: 0;
 }
 
-.action-section {
+.action {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 300px;
+    padding: 120px 0;
 }
 
-.action-tab {
-    flex: 1;
-    background-color: #3882F6;
-    margin: 72px 0;
-    padding: 48px;
+.action-box {
+    background-color: #1F2937;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 72px;
+    padding: 36px 48px;
+    border: 2px solid #3882F6;
+    border-radius: 8px;
+}
+
+.action-left {
+    font-family: roboto, sans-serif;
+    color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.action-left h3 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.action-left p {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.action-right {
+    font-family: roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.action-right a {
+    text-decoration: none;
+    color: #E5E7EB;
+    background-color: #3882F6;
+    padding: 6px 14px;
 }
 
 .footer {
+    background-color: #E5E7EB;
+    color: #1a2246;
+    font-size: 16px;
+    font-family: roboto, sans-serif;
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: #E5E7EB;
-    padding: 24px 0;
-    font-family: roboto, sans-serif;
-    font-size: 18px;
-}
-
-p {
-    margin: 0;
-    padding-bottom: 12px;
-    font-family: roboto, sans-serif;
-}
-
-
-.action-section p {
-    font-family: roboto, sans-serif;
-    color: #E5E7EB;
-    font-size: 18px;
-}
-
-p.action-title {
-    color: #F9FAF8;
-    font-size: 24px;
-    font-family: roboto, sans-serif;
+    align-items: center;
+    padding: 18px 0;
 }
