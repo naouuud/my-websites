@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercises</title>
+</head>
+
+<body>
+    <script>
+        function add7(num) {
+            return num + 7;
+        }
+        console.log(add7);
+        console.log(add7(23));
+        console.log(add7(-20));
+        console.log(multiply(8, 7));
+        console.log(multiply);
+
+        function multiply(a, b) {
+            return a * b
+        }
+
+        function capitalize(string) {
+            const str1 = string.charAt(0).toUpperCase();
+            const str2 = string.slice(1);
+            return str1 + str2;
+        }     
+
+        console.log(capitalize('hello my love.'));
+        console.log(capitalize('there are MANY things wrong with the world.'))
+        console.log(capitalize("PLEASE STOP!"));
+
+        function lastLetter(string) {
+            const last = string.charAt(string.length - 1);
+            return last;
+        }
+
+        console.log(lastLetter("Hello lovely"));
+        console.log(lastLetter);
+
+    </script>
+</body>
+
+</html>
