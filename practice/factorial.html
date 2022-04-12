@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+<div>
+    <p>This page allows you to enter a number and returns its factorial.</p>
+</div>
+<script>
+function FirstFactorial(num) {
+return (num == 1? 1 : num * FirstFactorial(num - 1));
+}
+
+let c = prompt('Pick a number', '');
+if (c == 0) {
+    alert('I\'m sorry, I cannot calculate the factorial of zero.')
+} else {
+alert(`The factorial of ${c} is ${FirstFactorial(c)}.`);
+}
+</script>
+</body>
+</html>
